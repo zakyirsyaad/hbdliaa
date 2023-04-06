@@ -1,38 +1,179 @@
-.App {
-  text-align: center;
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.videowelcome {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.welcome_container {
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.question {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.568);
+  margin-top: 10px;
+  border-radius: 25px 0px 25px 0px;
+  padding: 10px 40px;
+  width: 400px;
+  margin-left: 20px;
+  transition: all.3s;
+}
+
+.question:hover {
+  background: linear-gradient(to right, rgb(165, 180, 252), rgb(192, 132, 252));
+  box-shadow: #363636 5px 5px 3px 0px;
+  color: #FFF;
+}
+
+.question button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 5px 25px;
+  background-color: #e5d1fa88;
+  border: none;
+  font-weight: 700;
+  transition: all.3s;
+}
+
+.question button:hover {
+  background-color: #363636;
+  color: #E5D1FA;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+
+.desc_welcome {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* home */
+
+.home_container {
+  background: linear-gradient(to right bottom, rgb(165, 180, 252), rgb(192, 132, 252));
+  padding: 25px 0px;
+}
+
+.header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding: 50px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.header_home {
+  font-size: 40px;
+  color: #363636;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.desc_home {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.video_home {
+  width: 500px;
+  margin-top: 50px;
+  box-shadow: #363636 5px 5px 5px 0px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 100px;
+  background-color: #ECF2FF;
+  margin: 0px 100px;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.header_card {
+  font-size: 20px;
+  font-weight: 600;
+  color: #363636;
+  margin-bottom: 20px;
+  background-color: #E5D1FA;
+  padding: 10px 25px;
+  border-radius: 25px 0px;
+  border: none;
+  outline: none;
+  box-shadow: #363636 5px 5px 5px 0px;
+  transition: all .3s;
+}
+
+.header_card:hover {
+  background-color: #363636;
+  color: #E5D1FA;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.card_text {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px;
+
+}
+
+.text_welcome {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .videowelcome {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .question {
+    display: none;
+  }
+
+  .welcome_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #E5D1FA;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .videowelcome {
+    display: none;
+  }
+
+  .question {
+    display: none;
+  }
+
+  .welcome_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #E5D1FA;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .text_welcome {
+    display: none;
   }
 }
