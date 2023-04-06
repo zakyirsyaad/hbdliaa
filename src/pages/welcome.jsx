@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import videoBg from '../assets/en.mp4'
+import videoBg from '../assets/en_2.mp4'
 import React from 'react';
 
 function Welcome() {
