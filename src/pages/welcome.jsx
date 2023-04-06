@@ -1,8 +1,8 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import videoBg from '../assets/en.mp4'
+import React from 'react';
 
-export default function Welcome() {
+function Welcome() {
     return (
         <div className="welcome_container">
             <video src={videoBg} autoPlay controls className="videowelcome" />
@@ -15,5 +15,7 @@ export default function Welcome() {
             </div>
             <p className="text_welcome">Available view on Laptop/PC</p>
         </div >
-    )
+    );
 }
+
+export default Welcome;
